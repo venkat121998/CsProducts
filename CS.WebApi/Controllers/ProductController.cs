@@ -18,6 +18,11 @@ namespace CS.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateProduct([FromBody] ProductDto product)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             await _productService.AddProductAsync(product);
             return CreatedAtAction(nameof(GetProductById), new { id = product.Id }, product);
         }
@@ -43,9 +48,14 @@ namespace CS.WebApi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductDto product)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             if (id != product.Id)
             {
-                return BadRequest();
+                return BadRequest(new { message = "Product ID in the URL does not match the ID in the body." });
             }
 
             var existingProduct = await _productService.GetProductByIdAsync(id);
@@ -74,6 +84,11 @@ namespace CS.WebApi.Controllers
         [HttpPut("decrement-stock/{id}/{quantity}")]
         public async Task<IActionResult> DecrementStock(int id, int quantity)
         {
+            if (quantity <= 0)
+            {
+                return BadRequest(new { message = "Quantity must be greater than zero." });
+            }
+
             var product = await _productService.GetProductByIdAsync(id);
             if (product == null)
             {
@@ -87,6 +102,11 @@ namespace CS.WebApi.Controllers
         [HttpPut("add-to-stock/{id}/{quantity}")]
         public async Task<IActionResult> IncrementStock(int id, int quantity)
         {
+            if (quantity <= 0)
+            {
+                return BadRequest(new { message = "Quantity must be greater than zero." });
+            }
+
             var product = await _productService.GetProductByIdAsync(id);
             if (product == null)
             {
