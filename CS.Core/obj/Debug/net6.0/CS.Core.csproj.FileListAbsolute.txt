@@ -1,0 +1,14 @@
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\bin\Debug\net6.0\CS.Core.deps.json
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\bin\Debug\net6.0\CS.Core.runtimeconfig.json
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\bin\Debug\net6.0\CS.Core.dll
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\bin\Debug\net6.0\CS.Core.pdb
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\obj\Debug\net6.0\CS.Core.csproj.AssemblyReference.cache
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\obj\Debug\net6.0\CS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\obj\Debug\net6.0\CS.Core.AssemblyInfoInputs.cache
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\obj\Debug\net6.0\CS.Core.AssemblyInfo.cs
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\obj\Debug\net6.0\CS.Core.csproj.CoreCompileInputs.cache
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\obj\Debug\net6.0\CS.Core.dll
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\obj\Debug\net6.0\ref\CS.Core.dll
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\obj\Debug\net6.0\CS.Core.pdb
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\obj\Debug\net6.0\CS.Core.genruntimeconfig.cache
+C:\Users\Anirudh\source\repos\CS.WebApi\CS.Core\bin\Debug\net6.0\ref\CS.Core.dll
